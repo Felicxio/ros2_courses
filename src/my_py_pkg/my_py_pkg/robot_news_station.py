@@ -6,15 +6,16 @@ from example_interfaces.msg import String, Int64
 
 class RobotNewsNodeStationNode(Node): 
     def __init__(self):
-        super().__init__("robot_news_station") 
-        self.robot_name = "C3PO"
+        super().__init__("robot_news_station")
+        self.declare_parameter("robot_name", "R2-D2")
+        self.robot_name_ = self.get_parameter("robot_name").value
         self.publisher = self.create_publisher(String, "robot_news", 10)
         self.timer = self.create_timer(0.5, self.publish_news)
         self.get_logger().info("Robot News Station has been started.")
 
     def publish_news(self):
         msg = String()
-        msg.data = f"Hello, this is {self.robot_name} from the robot news station."
+        msg.data = f"Hello, this is {self.robot_name_} from the robot news station."
         self.publisher.publish(msg)
 
 
