@@ -12,6 +12,7 @@
 
 **João Victor Assunção Pereira**
 📧 [jvictor3651@gmail.com](mailto:jvictor3651@gmail.com)
+
 🔗 https://www.linkedin.com/in/jo%C3%A3o-victor-assun%C3%A7%C3%A3o-pereira-88a461211/
 
 ---
@@ -115,7 +116,8 @@ Responsible for controlling the main turtle (`turtle1`).
 
 The communication between nodes is illustrated below:
 
-![ROS Graph](./rosgraph.png)
+<img width="1021" height="225" alt="Captura de tela de 2026-05-01 14-39-50" src="https://github.com/user-attachments/assets/e793a70d-3110-469c-8ba1-2f4a447897e8" />
+
 
 ---
 
